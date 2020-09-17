@@ -10,7 +10,7 @@ module.exports = {
 	mode: 'none',
 	entry: path.resolve(ROOT_DIR, 'index.js'),
 	output: {
-		path: path.resolve(ROOT_DIR, 'dist'),
+		path: path.resolve(__dirname, '../../' , 'dist'),
 		filename: '[name].js',
 		chunkFilename: '[name].part.js',
 	},

@@ -1,0 +1,26 @@
+.search {
+  width: 100%;
+  margin-left: 18px;
+
+  > div {
+    border-radius: 24px;
+    height: 40px;
+    background-color: #eee;
+    font-size: 14px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+
+    input {
+      flex-grow: 1;
+      display: flex;
+      padding-left: 12px;
+      padding-bottom: 2px;
+      width: 100%;
+      background: none;
+      border: none;
+      color: #111;
+      outline: none;
+    }
+  }
+}

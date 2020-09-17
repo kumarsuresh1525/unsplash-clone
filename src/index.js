@@ -15,8 +15,7 @@ const Layout = () => (
 ReactDOM.render(
 	<div>
 		<Header />
-    <Layout />
+		<Layout />
 	</div>,
 	document.getElementById('app')
 );
-

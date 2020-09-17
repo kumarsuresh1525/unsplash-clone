@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "8"
+cache: npm
+script:
+  - echo 'Build starts!!'
+  - echo 'Installing Deps!'
+  - npm install
+  - echo 'linting check'
+  - npm run eslint
+install:
+  - npm install -g firebase-tools
+after_success:
+  - npm run build
+  - firebase deploy --token "$FIREBASE_TOKEN"
